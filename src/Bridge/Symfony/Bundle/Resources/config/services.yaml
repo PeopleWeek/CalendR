@@ -6,8 +6,8 @@ services:
   CalendR\Event\Manager:
     class: 'CalendR\Event\Manager'
 
-  CalendR\Extension\Twig\CalendRExtension:
-    class: 'CalendR\Extension\Twig\CalendRExtension'
+  CalendR\Bridge\Twig\CalendRExtension:
+    class: 'CalendR\Bridge\Twig\CalendRExtension'
     arguments: [ '@calendr' ]
     tags:
       - { name: twig.extension }
