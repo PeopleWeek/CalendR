@@ -20,7 +20,7 @@ use Twig\TwigFunction;
  */
 class CalendRExtension extends AbstractExtension
 {
-    protected Calendar $factory;
+    protected $factory;
 
     public function __construct(Calendar $factory)
     {

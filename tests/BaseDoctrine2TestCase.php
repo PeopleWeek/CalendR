@@ -26,9 +26,9 @@ use Doctrine\ORM\Mapping\ClassMetadataFactory;
  */
 class BaseDoctrine2TestCase extends TestCase
 {
-    protected Reader $reader;
+    protected $reader;
 
-    protected EntityManagerInterface $em;
+    protected $em;
 
     public function setUpDoctrine(): void
     {

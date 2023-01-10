@@ -20,9 +20,9 @@ use Twig\TwigFunction;
  */
 class CalendRExtensionTest extends TestCase
 {
-    protected CalendRExtension $object;
+    protected $object;
 
-    protected Calendar $calendar;
+    protected $calendar;
 
     protected function setUp(): void
     {
@@ -32,9 +32,10 @@ class CalendRExtensionTest extends TestCase
 
     public function testItReturnsFunctionNames(): void
     {
-
         $functions = array_map(
-            static function (TwigFunction $fn) { return $fn->getName(); },
+            static function (TwigFunction $fn) {
+                return $fn->getName();
+            },
             $this->object->getFunctions()
         );
 

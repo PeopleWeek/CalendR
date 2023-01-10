@@ -20,13 +20,13 @@ use Doctrine\Common\Cache\Cache as CacheInterface;
  */
 class Cache implements ProviderInterface
 {
-    protected CacheInterface $cache;
+    protected $cache;
 
-    protected ProviderInterface $provider;
+    protected $provider;
 
-    protected int $lifetime;
+    protected $lifetime;
 
-    protected ?string $namespace;
+    protected $namespace;
 
     public function __construct(CacheInterface $cache, ProviderInterface $provider, int $lifetime, ?string $namespace = null)
     {

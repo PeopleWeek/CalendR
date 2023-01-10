@@ -11,7 +11,7 @@ use CalendR\Period\Exception\NotAnHour;
  */
 class Hour extends PeriodAbstract implements \Iterator
 {
-    private ?PeriodInterface $current = null;
+    private $current = null;
 
     public function getDatePeriod(): \DatePeriod
     {

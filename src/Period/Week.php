@@ -9,7 +9,7 @@ namespace CalendR\Period;
  */
 class Week extends PeriodAbstract implements \Iterator
 {
-    private ?PeriodInterface $current = null;
+    private $current = null;
 
     public function getNumber(): int
     {

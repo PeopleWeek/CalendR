@@ -24,7 +24,7 @@ class Basic implements ProviderInterface, \IteratorAggregate, \Countable
     /**
      * @var EventInterface[]
      */
-    protected array $events = [];
+    protected $events = [];
 
     public function getEvents(\DateTimeInterface $begin, \DateTimeInterface $end, array $options = []): array
     {

@@ -25,12 +25,12 @@ class Indexed implements CollectionInterface
     /**
      * @var EventInterface[][]
      */
-    protected array $events;
+    protected $events;
 
     /**
      * Event count.
      */
-    protected int $count = 0;
+    protected $count = 0;
 
     /**
      * The function used to index events.

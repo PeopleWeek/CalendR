@@ -21,7 +21,7 @@ class Aggregate implements ProviderInterface
     /**
      * @var ProviderInterface[]
      */
-    private array $providers;
+    private $providers;
 
     /**
      * @param ProviderInterface[] $providers

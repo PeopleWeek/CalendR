@@ -16,7 +16,7 @@ use CalendR\Test\Fixtures\Period\Range;
 
 class AlternatePeriodsTest extends TestCase
 {
-    protected array $options = [
+    protected $options = [
         'day_class'   => Day::class,
         'week_class'  => FixtureWeek::class,
         'month_class' => FixtureMonth::class,
@@ -24,7 +24,7 @@ class AlternatePeriodsTest extends TestCase
         'range_class' => Range::class,
     ];
 
-    protected Calendar $calendar;
+    protected $calendar;
 
     protected function setUp(): void
     {

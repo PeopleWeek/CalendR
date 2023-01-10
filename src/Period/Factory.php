@@ -13,9 +13,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 class Factory implements FactoryInterface
 {
-    protected array $options;
+    protected $options;
 
-    protected ?OptionsResolver $resolver = null;
+    protected $resolver = null;
 
     public function __construct(array $options = [])
     {

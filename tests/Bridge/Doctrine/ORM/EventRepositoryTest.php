@@ -13,13 +13,13 @@ use Doctrine\ORM\Query\Expr;
 
 class EventRepositoryTest extends TestCase
 {
-    protected EventRepository $repo;
+    protected $repo;
 
-    protected EntityManagerInterface $em;
+    protected $em;
 
-    protected ClassMetadata $classMetadata;
+    protected $classMetadata;
 
-    protected QueryBuilder $qb;
+    protected $qb;
 
     public function setUp(): void
     {

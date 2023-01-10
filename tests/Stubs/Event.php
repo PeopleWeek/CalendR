@@ -14,17 +14,17 @@ class Event extends AbstractEvent
      * @ORM\Id
      * @ORM\Column(type="string", length=31)
      */
-    protected ?string $id = null;
+    protected $id = null;
 
     /**
      * @ORM\Column(type="datetime_immutable")
      */
-    protected ?\DateTimeImmutable $begin = null;
+    protected $begin = null;
 
     /**
      * @ORM\Column(type="datetime_immutable")
      */
-    protected ?\DateTimeImmutable $end = null;
+    protected $end = null;
 
     public function getId(): ?int
     {

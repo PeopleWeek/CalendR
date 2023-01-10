@@ -22,9 +22,9 @@ use CalendR\Period\Week;
  */
 class Calendar
 {
-    private ?Manager $eventManager = null;
+    private $eventManager = null;
 
-    protected ?FactoryInterface $factory = null;
+    protected $factory = null;
 
     public function setEventManager(Manager $eventManager): void
     {

@@ -20,11 +20,11 @@ namespace CalendR\Event;
  */
 class Event extends AbstractEvent
 {
-    protected \DateTimeInterface $begin;
+    protected $begin;
 
-    protected \DateTimeInterface $end;
+    protected $end;
 
-    protected string $uid;
+    protected $uid;
 
     public function __construct($uid, \DateTimeInterface $start, \DateTimeInterface $end)
     {

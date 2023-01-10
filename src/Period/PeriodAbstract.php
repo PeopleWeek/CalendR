@@ -21,11 +21,11 @@ use CalendR\Exception;
  */
 abstract class PeriodAbstract implements PeriodInterface
 {
-    protected \DateTimeInterface $begin;
+    protected $begin;
 
-    protected \DateTimeInterface $end;
+    protected $end;
 
-    protected ?FactoryInterface $factory;
+    protected $factory;
 
     /**
      * @throws Exception

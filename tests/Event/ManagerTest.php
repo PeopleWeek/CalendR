@@ -21,7 +21,7 @@ class ManagerTest extends TestCase
 {
     use ProphecyTrait;
 
-    protected Manager $object;
+    protected $object;
 
     /**
      * Sets up the fixture, for example, opens a network connection.

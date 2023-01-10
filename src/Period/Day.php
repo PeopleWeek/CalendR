@@ -26,7 +26,7 @@ class Day extends PeriodAbstract implements \Iterator
     public const SATURDAY  = 6;
     public const SUNDAY    = 0;
 
-    private ?PeriodInterface $current = null;
+    private $current = null;
 
     /**
      * Returns the period as a DatePeriod.
